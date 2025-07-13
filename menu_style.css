@@ -1,0 +1,24 @@
+#menu {
+    color: white;
+    background-color: black;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    height: auto; /* Let height adjust based on content */
+    width: 100%; /* Use full width of the parent container */
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dish1 {
+    object-fit: fill;
+    color: white;
+    background: linear-gradient(blue);
+    overflow: hidden;
+}
+
+.dish2 {
+    object-fit: fill;
+    color: white;
+    overflow: hidden;
+}

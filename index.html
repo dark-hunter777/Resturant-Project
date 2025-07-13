@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Restaurant Name</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="menu_style.css">
+</head>
+<body>
+
+<header>
+    <h1> FARZI RESTAURANT</h1>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#order">Order Now</a></li>
+            <li><a href="Login/login.html">login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <div class="image-slider">
+    <img src="hero/images/hero-image-1.jpg" alt="Image" class="slider-image" height="70%" width="90%">
+    <img src="hero/images/hero-image-2.jpg" alt="Image" class="slider-image" height="70%" width="90%">
+    <img src="hero/images/hero-image-3.jpg" alt="image" class="slider-image" height="70%" width="90%">
+    <img src="hero/images/hero-image-4.jpg" alt="image" class="slider-image" height="70%" width="90%">
+    <img src="hero/images/hero-image-5.jpg" alt="image" class="slider-image" height="70%" width="90%">
+</div>
+<div class="hero-content">
+    <h2>Experience the Taste of Authentic Cuisine</h2>
+</div>
+<div class="quote-slider">
+    <div class="quote active">Food is everything we are. It's an extension of nationalist feeling, ethnic feeling, your province, your region, your tribe, your grandma. It's inseparable from those from the get-go.</div>
+    <div class="quote">Understand, when you eat meat, that
+        something did die. You have an obligation
+        to value it - not just the sirloin but also all
+        those wonderful tough little bits.</div>
+    <div class="quote">Line cooking done well is a beautiful thing
+        to watch. It's a high-speed collaboration
+        resembling, at its best, ballet or modern dance.</div>
+    <div class="quote">Restaurants get you in with food
+        to sell you liquor; religions get you
+        in with belief to sell you rules.</div>
+    <div class="quote">Remember that a very good sardine is always
+        preferable to a not that good lobster.</div>
+</div>
+</section>
+
+<section id="about">
+    <h3>About Us</h3>
+    <p>Welcome to our restaurant, where we serve delicious and authentic dishes made with love.</p>
+</section>
+
+<section id="menu">
+    <h3>Menu Highlights</h3>
+    <div class="dish1">
+        <img src="Dish Images/dish1.jpg" alt="Dish1" height="170px" width="270px">
+        <h4>Dish Name</h4>
+        <p>Description of the dish.</p>
+    </div>
+    <div class="dish2">
+        <img src="Dish Images/dish2.jpg" alt="Dish2" height="170px" width="270px">
+        <h4>Dish Name</h4>
+        <p>Description of the dish.</p>
+    </div>
+    <a href="full-menu.html" class="button">View Full Menu</a>
+</section>
+
+<section id="reservations">
+    <h3>Make a Reservation</h3>
+    <a href="reservation-form.html" class="button">Reserve Now</a>
+</section>
+
+<section id="testimonials">
+    <h3>What Our Customers Say</h3>
+    <blockquote>"Best restaurant in town!" - Happy Customer</blockquote>
+</section>
+
+<section id="gallery">
+    <h3>Gallery</h3>
+    <img src="gallery-image1.jpg" alt="Gallery Image">
+    <img src="gallery-image2.jpg" alt="Gallery Image">
+</section>
+<div id="loginPopup" style="display: none; position: fixed; top: 50%; left: 50%; transform:translate(-50%, -50%); background-color: white; border: 1px solid #ccc; padding: 20px; box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.5); z-index: 1000;">
+    <h3>Login Required</h3>
+    <p>You need to login to access this section.</p>
+    <a href="Login/login.html">Login</a> | <a href="Signup/signup.html">Sign Up</a>
+    <button onclick="closePopup()">Close</button>
+</div>
+<script src="required-login_script.js"></script>
+<script>
+    document.addEventListener('copy', function(e) {
+        e.preventDefault();
+        const customMessage = 'falanva';
+        e.clipboardData.setData('text/plain', customMessage);
+    });
+</script>
+<footer>
+    <div class="bang">
+        <a href="Login/login.html">Login</a>
+    </div>
+    <p>Contact us: (123) 456-7890 | email@example.com</p>
+    <p>Follow us on social media!</p>
+    <section id="userSection" style="display: none; text-align: center; margin-top: 20px;">
+        <h3 id="userName"></h3>
+        <button id="logoutButton" onclick="logout()">Logout</button>
+    </section>
+    <button id="specialButton" style="display: block;">Special Feature</button>
+</footer>
+<script src="hero/image-slider_script.js"></script>
+</body>
+</html>S
